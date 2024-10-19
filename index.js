@@ -42,11 +42,11 @@ client.on(Events.InteractionCreate , async interaction =>{
     if(interaction.commandName === "introduce"){
         await interaction.deferReply(); 
         interaction.editReply("這是Jerry的自主學習bot");
-        console.log(`${interaction.user.username} 使用了${interaction.commandName}`);
+        console.log(`${interaction.user.username} 使用了/${interaction.commandName}`);
     } else if(interaction.commandName === "hi"){
         await interaction.deferReply(); 
         interaction.editReply(`嗨，${interaction.user.username}！`);
-        console.log(`${interaction.user.username} 使用了${interaction.commandName}`);
+        console.log(`${interaction.user.username} 使用了/${interaction.commandName}`);
 
     }
 })
